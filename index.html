@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+  <title>Tradução de Código Morse</title>
+</head>
+
+<body>
+
+  <main>
+
+    <button id="limpar-campos">Limpar campos</button>
+
+    <span>
+      <h1><strong>Texto normal</strong></h1>
+      <button class="button-inputs" id="text-to-morse" onclick="textToMorse()">Codificar em Código Morse</button>
+      <textarea id="normal-text" type="text" value="" placeholder="Digite seu texto aqui..."></textarea>
+    </span>
+
+    <span>
+      <h1><strong>Código Morse</strong></h1>
+      <button class="button-inputs" id="morse-to-text" onclick="morseToText()">Decodificar em texto normal</button>
+      <p>Separe as letras com 1 espaço e as palavras com 3 espaços</p>
+      <textarea id="morse-code" type="text" value="" placeholder="Digite seu Código Morse aqui..."></textarea>
+    </span>
+
+
+    <div class="main-footer">
+      <p>Developed by <strong>Matheus Saggiorato</strong></p>
+
+      <div class="social-midias-container">
+
+        <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Ol%C3%A1%20Matheus!" target="_blank">
+          <i class="fa-brands fa-whatsapp icon-social-midia"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/matheus-saggiorato" target="_blank">
+          <i class="fa-brands fa-linkedin-in icon-social-midia"></i>
+        </a>
+
+        <a href="https://github.com/MatheusSaggiorato" target="_blank">
+          <i class="fa-brands fa-github icon-social-midia"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script defer src="./assets/scripts/script.js"></script>
+  <script defer src="https://kit.fontawesome.com/d2e94242a3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
