@@ -51,3 +51,11 @@ document.getElementById('morse-to-text').addEventListener('click', function () {
 });
 
 document.getElementById('limpar-campos').addEventListener('click', clearFields);
+
+const textareas = document.querySelectorAll('textarea');
+textareas.forEach(function(textarea) {
+  textarea.addEventListener('input', function() {
+    // Converte o texto para maiúsculas
+    this.value = this.value.toUpperCase();
+  });
+});
